@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> University Website </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../university-style.css">
+    <link rel="preconnect" href="https://fonts.gststic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- Sub Header Section -->
+    <section class="sub-header">
+        <!-- Navbar -->
+        <nav>
+            <a href="../university.html"><img src="../images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="../university.html"> HOME </a>
+                    </li>
+                    <li>
+                        <a href="#"> ABOUT </a>
+                    </li>
+                    <li>
+                        <a href="Courses.html"> COURSE </a>
+                    </li>
+                    <li>
+                        <a href="Blog.html"> BLOG </a>
+                    </li>
+                    <li>
+                        <a href="Contact.html"> CONTACT </a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1> About Us</h1>
+    </section>
+
+    <!-- About Us Content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world’s biggest university</h1>
+                <p>With 3.5 million students matriculated, the Indira Gandhi National Open University (IGNOU) from India is the largest university in the world. It accepts almost 20 percent of all students in India. This number is even bigger if it is compared
+                    to Germany, where 2.7 million students in total are matriculated. It was founded with the idea to make higher education available in every part of India. Therefore it offers 226 study subjects across 21 faculties. With several institutions
+                    and 15 field offices in different countries, Indira Gandhi National Open University guarantees itself an international place.
+                </p>
+                <a href="" class="btn common-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="../images/about.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>University is now one of the easiest collages to graduate study emphasises your ability to work independently,<br> while supported by a world-class academic community.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p> Made With <i class="fa fa-heart-o"></i> by Mariem Elgendy </p>
+    </section>
+
+    <!-- Java Script -->
+    <script>
+        // Toggle Menu
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

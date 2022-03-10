@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> University Website </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../university-style.css">
+    <link rel="preconnect" href="https://fonts.gststic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- Sub Header Section -->
+    <section class="sub-header">
+        <!-- Navbar -->
+        <nav>
+            <a href="../university.html"><img src="../images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="../university.html"> HOME </a>
+                    </li>
+                    <li>
+                        <a href="About.html"> ABOUT </a>
+                    </li>
+                    <li>
+                        <a href="Courses.html"> COURSE </a>
+                    </li>
+                    <li>
+                        <a href="#"> BLOG </a>
+                    </li>
+                    <li>
+                        <a href="Contact.html"> CONTACT </a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1> Our Certificate & Online Programs For 2021</h1>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog">
+        <div class="row">
+            <div class="blog-left">
+                <img src="../images/certificate.jpg">
+                <h2>Our Certificate & Online Programs For 2021</h2>
+                <p>The Global Student Satisfaction Awards are the only student-powered global university overview capturing feedback on life inside and outside the classroom. Hosted every two years by our partners, Studyportals, the Awards have become a
+                    staple in showcasing some of the world’s best performing universities and colleges in select areas. </p>
+                <br>
+                <p>The review-based Global Student Satisfaction Awards recognise the universities that have achieved the highest student satisfaction ratings. The reviews are collected by Studyportal’s community and partner study associations, like U-Multirank
+                    and include checks to ensure the validity of the reviews. In the reviews, students can rate their study experience on a scale from 1 (lowest rating) to 5 (highest rating) by answering the following questions to assess their satisfaction
+                    in the respective eight categories – two of which are new this year: </p>
+                <br>
+                <p> 1. Overall satisfaction (‘How would you rate your overall study experience?’) <br> 2. Admission process (‘How simple was it to apply to your programme? Was the information that you found on the website clear enough? Did you get support
+                    from the university staff?’) <br> 3. Student-teacher interaction (‘How helpful, engaged and interested were your teachers with you? How easy was it for you to interact with them, during or after class?’) <br> 4. Online classroom experience
+                    (NEW) (‘How well did your university change education to online? (e.g. format, content, interaction, quality of online classes)’)<br> 5. Covid-19 crisis management (NEW) (‘How do you rate your university’s response to the Covid-19
+                    crisis? How well did they support you and your fellow students during the pandemic?’)<br> 6. Student diversity (‘How diverse/friendly was the atmosphere at your university (E.g. different countries, cultures, religions, age, gender,
+                    special needs, etc.)?’)<br> 7. Quality of student life (‘How was your everyday life? Especially when thinking about the city where you lived, did it satisfy your needs and expectations?’)<br> 8. Career development (‘Did the university
+                    provide support for your career development (E.g. extracurricular courses, workshops and conferences, help in finding internships)?’)</p>
+                <br>
+                <p>The Awards were led by Studyportals CEO and co-Founder, Edwin van Rest at their global headquarters in Eindhoven, Netherlands. The ceremony included testimonials and insights from the report, thought leadership from distinguished keynote
+                    speakers and input from partners on the eight award categories. For example, our very own U-Multirank project leader, Dr. Frans van Vught presented the award for ‘Covid-19 crisis management’. Each category included three regional winners/
+                    nominees and one global winner. The three regions included, the Americas (North and South Amrica), EMEA (Europe, the Middle East and Africa), and APAC (Asia Pacific). </p>
+
+                <div class="comment-box">
+                    <h3> Leave a Comment </h3>
+                    <form method="POST" action="Blog.html" class="comment-form">
+                        <input type="text" placeholder="Enter Your Name">
+                        <input type="email" placeholder="Enter Your Email Address">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="btn common-btn">POST COMMENT</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="blog-right">
+                <h3> Post Categories </h3>
+                <div>
+                    <span> Business Analytics </span>
+                    <span> 21 </span>
+                </div>
+                <div>
+                    <span> Data Science </span>
+                    <span> 28 </span>
+                </div>
+                <div>
+                    <span> Machine Learning </span>
+                    <span> 15 </span>
+                </div>
+                <div>
+                    <span> Computer Science </span>
+                    <span> 34 </span>
+                </div>
+                <div>
+                    <span> AutoCAD </span>
+                    <span> 42 </span>
+                </div>
+                <div>
+                    <span> Journalism </span>
+                    <span> 22 </span>
+                </div>
+                <div>
+                    <span> Commerce </span>
+                    <span> 30 </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>University is now one of the easiest collages to graduate study emphasises your ability to work independently,<br> while supported by a world-class academic community.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p> Made With <i class="fa fa-heart-o"></i> by Mariem Elgendy </p>
+    </section>
+
+    <!-- Java Script -->
+    <script>
+        // Toggle Menu
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> University Website </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../university-style.css">
+    <link rel="preconnect" href="https://fonts.gststic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- Sub Header Section -->
+    <section class="sub-header">
+        <!-- Navbar -->
+        <nav>
+            <a href="../university.html"><img src="../images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="../university.html"> HOME </a>
+                    </li>
+                    <li>
+                        <a href="About.html"> ABOUT </a>
+                    </li>
+                    <li>
+                        <a href="Courses.html"> COURSE </a>
+                    </li>
+                    <li>
+                        <a href="Blog.html"> BLOG </a>
+                    </li>
+                    <li>
+                        <a href="#"> CONTACT </a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1> Contact Us</h1>
+    </section>
+
+    <!-- Contact Us Content -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14026.011803876523!2d77.204582!3d28.494512!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDI5JzQwLjIiTiA3N8KwMTInMTYuNSJF!5e0!3m2!1sen!2sus!4v1634817308168!5m2!1sen!2sus" width="600"
+            height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Paris Road - Makka Building </h5>
+                        <p> Bangalore - Karnataka - IN</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+2 01022555555 </h5>
+                        <p> Saturday To Thursday - 10AM To 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5> maruoma@gmail.com</h5>
+                        <p> Email us your quary</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+                <form method="POST" action="Contact.html">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn common-btn"> Send Message</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>University is now one of the easiest collages to graduate study emphasises your ability to work independently,<br> while supported by a world-class academic community.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p> Made With <i class="fa fa-heart-o"></i> by Mariem Elgendy </p>
+    </section>
+
+    <!-- Java Script -->
+    <script>
+        // Toggle Menu
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
+
+</html>
